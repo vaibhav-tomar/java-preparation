@@ -6,7 +6,7 @@ public class CountInversions {
         System.out.println(divide(a));
     }
 
-    // three posobolities- the pair can lie on left, right, or on number on left and one on right;
+    // three possibilities- the pair can lie on left, right, or on number on left and one on right;
     private static int divide(int[] a) {
         int n = a.length;
         if (n == 1) return 0;

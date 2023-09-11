@@ -2,16 +2,15 @@ package dsa.recursion;
 
 public class TowerOfHanoi {
     public static void main(String[] args) {
-        toh(3, 'A', 'B', 'C');
+        toh(3, 1, 2, 3);
     }
 
-    private static void toh(int n, char a, char b, char c) {
-        if (n == 1) {
-            System.out.println("Move 1 from " + a + " to " + c);
-            return;
-        }
-        toh(n - 1, a, c, b);
-        System.out.println("Move " + n + " from " + a + " to " + c);
-        toh(n - 1, b, a, c);
+    public static long toh(int n, int from, int to, int aux) {
+        // Your code here
+        if (n == 0) return 0;
+        long firstStep = toh(n - 1, from, aux, to);
+        System.out.println("move disk " + n + " from rod " + from + " to rod " + to);
+        long thirdStep = toh(n - 1, aux, to, from);
+        return firstStep + 1 + thirdStep;
     }
 }

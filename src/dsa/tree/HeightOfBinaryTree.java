@@ -2,7 +2,7 @@ package dsa.tree;
 
 public class HeightOfBinaryTree {
 
-    private int height(Node root) {
+    private int height(TreeNode root) {
         if (root == null) return 0;
         int leftHeight = height(root.left);
         int rightHeight = height(root.right);

@@ -2,7 +2,6 @@ package dsa.sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 public class MergeOverlappingIntervals {
@@ -20,12 +19,7 @@ public class MergeOverlappingIntervals {
         a[4] = new Pair(27, 30);
         a[5] = new Pair(5, 12);
 
-        Arrays.sort(a, new Comparator<Pair>() {
-            @Override
-            public int compare(Pair o1, Pair o2) {
-                return o1.s - o2.s;
-            }
-        });
+        Arrays.sort(a, (o1, o2) -> o1.s - o2.s);
         List<Pair> res = new ArrayList<>();
         res.add(a[0]);
         for (int i = 1; i < a.length; i++) {

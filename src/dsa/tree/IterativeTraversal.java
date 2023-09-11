@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class IterativeTraversal {
 
-    private void iterativeTraversal(Node root) {
+    private void iterativeTraversal(TreeNode root) {
         String pre = "";
         String post = "";
         String in = "";
@@ -35,10 +35,10 @@ public class IterativeTraversal {
     }
 
     static class Pair {
-        Node node;
+        TreeNode node;
         int state;
 
-        Pair(Node node, int state) {
+        Pair(TreeNode node, int state) {
             this.node = node;
             this.state = state;
         }

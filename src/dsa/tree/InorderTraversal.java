@@ -2,7 +2,7 @@ package dsa.tree;
 
 public class InorderTraversal {
 
-    private void inorder(Node root) {
+    private void inorder(TreeNode root) {
         if (root == null) return;
         inorder(root.left);
         System.out.print(root.key + " ");
@@ -11,12 +11,12 @@ public class InorderTraversal {
 
 }
 
-class Node {
+class TreeNode {
     int key;
-    Node left;
-    Node right;
+    TreeNode left;
+    TreeNode right;
 
-    Node(int key) {
+    TreeNode(int key) {
         this.key = key;
     }
 }
