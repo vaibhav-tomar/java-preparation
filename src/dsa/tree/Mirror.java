@@ -1,17 +1,14 @@
 package dsa.tree;
 
 public class Mirror {
-    void mirror(TreeNode node) {
-        // Your code here
-        if (node == null) return;
+    boolean checkMirror(TreeNode left, TreeNode right) {
+        if (left == null || right == null) {
+            return left == right;
+        }
 
-        mirror(node.left);
-        mirror(node.right);
+        boolean leftCall = checkMirror(left.left, right.right);
+        boolean rightCall = checkMirror(left.right, right.left);
 
-        TreeNode temp = node.left;
-        node.left = node.right;
-        node.right = temp;
-
-
+        return leftCall && rightCall;
     }
 }
