@@ -21,7 +21,7 @@ public class AllDivisors {
 
         // Solution - 3: O(sqrt(n)) sorted
         int i;
-        // first loop from 1(inclusive to sqrt(n) (exclusive)
+        // first loop from 1(inclusive) to sqrt(n) (exclusive)
         for (i = 1; i * i < a; i++) {
             if (a % i == 0) {
                 System.out.println(i);
