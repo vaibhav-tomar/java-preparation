@@ -8,7 +8,8 @@ public class FindTriplets {
         System.out.println(ans);
     }
 
-    // if you are given unsorted array then also time complexity will be O(n^2) because we can sory the given array first in O(nlogn)
+    // if you are given unsorted array then also time complexity will be O(n^2)
+    // because we can sort the given array first in O(nlogn)
     private static boolean findTriplet(int[] a, int x) {
         for (int i = 0; i < a.length - 2; i++) {
             if (findPair(a, x - a[i], i + 1)) return true;
