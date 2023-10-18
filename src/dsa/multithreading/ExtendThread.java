@@ -9,6 +9,7 @@ public class ExtendThread {
     }
 
     public static class Test extends Thread {
+        @Override
         public void run() {
             System.out.println("running in new thread");
         }
