@@ -1,4 +1,4 @@
-package dsa.multithreading;
+package multithreading;
 
 public class ExtendThread {
 
