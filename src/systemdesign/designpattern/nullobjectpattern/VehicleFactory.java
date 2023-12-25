@@ -7,8 +7,7 @@ public class VehicleFactory {
             return new Car();
         } else if (vehicleType.equals("bike")) {
             return new Bike();
-        } else {
-            return new NullVehicle();
         }
+        return new NullVehicle();
     }
 }
