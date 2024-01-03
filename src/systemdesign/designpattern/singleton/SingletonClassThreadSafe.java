@@ -1,4 +1,4 @@
-package singleton;
+package systemdesign.designpattern.singleton;
 
 public class SingletonClassThreadSafe {
 

@@ -1,9 +1,11 @@
-package singleton;
+package systemdesign.designpattern.singleton;
 
 public class SingletonClass {
 
+    // this field should be private
     private static SingletonClass instance;
 
+    // this constructor must be private
     private SingletonClass() {
 
     }

@@ -1,4 +1,4 @@
-package singleton;
+package systemdesign.designpattern.singleton;
 
 public class SingletonClassThreadSafeEfficient {
 
@@ -7,6 +7,7 @@ public class SingletonClassThreadSafeEfficient {
     private SingletonClassThreadSafeEfficient() {
 
     }
+
 
     public SingletonClassThreadSafeEfficient getInstance() {
         if (instance == null) {
