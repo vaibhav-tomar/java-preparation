@@ -1,8 +1,9 @@
 package systemdesign.questions.LLDCricbuzz.Team;
 
-import LowLevelDesign.LLDCricBuzz.Match.Team.Player.PlayerBattingController;
-import LowLevelDesign.LLDCricBuzz.Match.Team.Player.PlayerBowlingController;
-import LowLevelDesign.LLDCricBuzz.Match.Team.Player.PlayerDetails;
+
+import systemdesign.questions.LLDCricbuzz.Team.Player.PlayerBattingController;
+import systemdesign.questions.LLDCricbuzz.Team.Player.PlayerBowlingController;
+import systemdesign.questions.LLDCricbuzz.Team.Player.PlayerDetails;
 
 import java.util.List;
 import java.util.Queue;

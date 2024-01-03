@@ -1,6 +1,7 @@
 package systemdesign.questions.DesignSplitwise.Group;
 
-import LowLevelDesign.DesignSplitwise.User.User;
+
+import systemdesign.questions.DesignSplitwise.User.User;
 
 import java.util.ArrayList;
 import java.util.List;

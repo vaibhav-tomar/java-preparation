@@ -1,8 +1,9 @@
 package systemdesign.questions.LLDCricbuzz.Inning;
 
-import LowLevelDesign.LLDCricBuzz.Match.MatchType;
-import LowLevelDesign.LLDCricBuzz.Match.Team.Player.PlayerDetails;
-import LowLevelDesign.LLDCricBuzz.Match.Team.Team;
+
+import systemdesign.questions.LLDCricbuzz.MatchType;
+import systemdesign.questions.LLDCricbuzz.Team.Player.PlayerDetails;
+import systemdesign.questions.LLDCricbuzz.Team.Team;
 
 import java.util.ArrayList;
 import java.util.List;

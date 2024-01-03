@@ -1,7 +1,8 @@
 package systemdesign.questions.LLDCricbuzz;
 
-import LowLevelDesign.LLDCricBuzz.Match.Inning.InningDetails;
-import LowLevelDesign.LLDCricBuzz.Match.Team.Team;
+
+import systemdesign.questions.LLDCricbuzz.Inning.InningDetails;
+import systemdesign.questions.LLDCricbuzz.Team.Team;
 
 import java.util.Date;
 

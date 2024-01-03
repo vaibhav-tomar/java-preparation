@@ -1,7 +1,8 @@
 package systemdesign.questions.DesignSplitwise.Expense;
 
-import LowLevelDesign.DesignSplitwise.Expense.Split.Split;
-import LowLevelDesign.DesignSplitwise.User.User;
+
+import systemdesign.questions.DesignSplitwise.Expense.Split.Split;
+import systemdesign.questions.DesignSplitwise.User.User;
 
 import java.util.ArrayList;
 import java.util.List;

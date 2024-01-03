@@ -1,9 +1,10 @@
 package systemdesign.questions.DesignSplitwise.Expense;
 
-import LowLevelDesign.DesignSplitwise.Expense.Split.EqualExpenseSplit;
-import LowLevelDesign.DesignSplitwise.Expense.Split.ExpenseSplit;
-import LowLevelDesign.DesignSplitwise.Expense.Split.PercentageExpenseSplit;
-import LowLevelDesign.DesignSplitwise.Expense.Split.UnequalExpenseSplit;
+
+import systemdesign.questions.DesignSplitwise.Expense.Split.EqualExpenseSplit;
+import systemdesign.questions.DesignSplitwise.Expense.Split.ExpenseSplit;
+import systemdesign.questions.DesignSplitwise.Expense.Split.PercentageExpenseSplit;
+import systemdesign.questions.DesignSplitwise.Expense.Split.UnequalExpenseSplit;
 
 public class SplitFactory {
 

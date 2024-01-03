@@ -1,6 +1,7 @@
 package systemdesign.questions.DesignSplitwise.Expense.Split;
 
-import LowLevelDesign.DesignSplitwise.User.User;
+
+import systemdesign.questions.DesignSplitwise.User.User;
 
 public class Split {
 

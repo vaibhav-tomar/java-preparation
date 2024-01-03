@@ -1,9 +1,10 @@
 package systemdesign.questions.LLDCricbuzz;
 
-import LowLevelDesign.LLDCricBuzz.Match.Team.Player.Person;
-import LowLevelDesign.LLDCricBuzz.Match.Team.Player.PlayerDetails;
-import LowLevelDesign.LLDCricBuzz.Match.Team.Player.PlayerType;
-import LowLevelDesign.LLDCricBuzz.Match.Team.Team;
+
+import systemdesign.questions.LLDCricbuzz.Team.Player.Person;
+import systemdesign.questions.LLDCricbuzz.Team.Player.PlayerDetails;
+import systemdesign.questions.LLDCricbuzz.Team.Player.PlayerType;
+import systemdesign.questions.LLDCricbuzz.Team.Team;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

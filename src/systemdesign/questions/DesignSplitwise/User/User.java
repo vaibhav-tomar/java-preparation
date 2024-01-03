@@ -1,6 +1,7 @@
 package systemdesign.questions.DesignSplitwise.User;
 
-import LowLevelDesign.DesignSplitwise.UserExpenseBalanceSheet;
+
+import systemdesign.questions.DesignSplitwise.UserExpenseBalanceSheet;
 
 public class User {
 
