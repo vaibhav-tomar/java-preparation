@@ -14,10 +14,10 @@ public class Main {
 
          */
 
-        ILetter object1 = LetterFactor.crateLetter('t');
+        ILetter object1 = LetterFactory.crateLetter('t');
         object1.display(0, 0);
 
-        ILetter object2 = LetterFactor.crateLetter('t');
+        ILetter object2 = LetterFactory.crateLetter('t');
         object1.display(0, 6);
 
     }

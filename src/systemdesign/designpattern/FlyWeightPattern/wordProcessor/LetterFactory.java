@@ -3,7 +3,7 @@ package systemdesign.designpattern.FlyWeightPattern.wordProcessor;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LetterFactor {
+public class LetterFactory {
 
     private static Map<Character, ILetter> characterCache = new HashMap<>();
 
@@ -13,7 +13,7 @@ public class LetterFactor {
             return characterCache.get(characterValue);
         } else {
 
-            DocumentCharacter characterObj = new DocumentCharacter(characterValue, "Arial", 10);
+            ILetter characterObj = new DocumentCharacter(characterValue, "Arial", 10);
             characterCache.put(characterValue, characterObj);
             return characterObj;
         }
