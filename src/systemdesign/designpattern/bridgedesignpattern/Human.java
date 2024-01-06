@@ -1,4 +1,4 @@
-package systemdesign.designpattern.nullobjectpattern.bridgedesignpattern;
+package systemdesign.designpattern.bridgedesignpattern;
 
 public class Human extends LivingThing {
 
