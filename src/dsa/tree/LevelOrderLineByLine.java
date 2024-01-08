@@ -13,7 +13,7 @@ public class LevelOrderLineByLine {
         // Your code here
         if (node == null) return new ArrayList<>();
         ArrayList<ArrayList<Integer>> res = new ArrayList<>();
-        Queue<TreeNode> q = new LinkedList();
+        Queue<TreeNode> q = new LinkedList<>();
         q.add(node);
 
         while (!q.isEmpty()) {

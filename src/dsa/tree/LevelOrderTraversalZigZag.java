@@ -1,42 +1,35 @@
 package dsa.tree;
 
 import java.util.ArrayList;
-import java.util.Stack;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class LevelOrderTraversalZigZag {
-    static ArrayList<Integer> printZigZag(TreeNode root) {
-        if (root == null) return new ArrayList<Integer>();
-        Stack<TreeNode> ms = new Stack<>();
-        Stack<TreeNode> cs = new Stack<>();
-        ArrayList<Integer> al = new ArrayList<>();
-        ms.add(root);
-        int level = 0;
-        while (!ms.isEmpty()) {
-            TreeNode temp = ms.pop();
-            al.add(temp.key);
-            if (level % 2 == 0) {
-                if (temp.right != null) {
-                    cs.add(temp.right);
-                }
-                if (temp.left != null) {
-                    cs.add(temp.left);
+    static ArrayList<ArrayList<Integer>> printZigZag(TreeNode root) {
 
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        if (root == null) return res;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        boolean leftToRight = true;
+        while (queue.isEmpty() == false) {
+            int size = queue.size();
+            ArrayList<Integer> al = new ArrayList<>(size);
+            for (int i = 0; i < size; i++) {
+                TreeNode node = queue.poll();
+                int index = leftToRight ? i : size - 1 - i;
+                al.add(index, node.key);
+                if (node.left != null) {
+                    queue.add(node.left);
                 }
-            } else {
-                if (temp.left != null) {
-                    cs.add(temp.left);
-                }
-                if (temp.right != null) {
-                    cs.add(temp.right);
+                if (node.right != null) {
+                    queue.add(node.right);
                 }
             }
+            res.add(al);
+            leftToRight = !leftToRight;
 
-            if (ms.size() == 0) {
-                ms = cs;
-                cs = new Stack<>();
-                level++;
-            }
         }
-        return al;
+        return res;
     }
 }
