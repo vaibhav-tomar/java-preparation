@@ -4,7 +4,7 @@ package dsa.array;
 public class JaggedArray {
     public static void main(String[] args) {
         int m = 4, n;
-        int a[][] = new int[m][];
+        int[][] a = new int[m][];
 
         for (int i = 0; i < m; i++) {
             a[i] = new int[i + 1];

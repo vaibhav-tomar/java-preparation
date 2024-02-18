@@ -1,23 +1,16 @@
 package dsa;
 
+import java.util.*;
+
 public class Test {
     public static void main(String[] args) {
-//        System.out.println("Everything is fine!");
-//        System.out.println("C:\\xyz\\abc.txt");
-//        System.out.println(~3);
-//        System.out.println(3 << 2);
-//        System.out.println("99".substring(1, 1));
-//
-//        for (int i = 1; i <= 5; i++) {
-//            for (int j = 1; j <= 5 - i; j++) {
-//                System.out.print(" ");
-//            }
-//            for (int k = 1; k <= (2 * i - 1); k++) {
-//                System.out.print("*");
-//            }
-//            System.out.println();
-//        }
-
+        Map<Integer, Integer> map = new HashMap<>();
+        Collection<Integer> values = map.values();
+        List<Integer> al = new ArrayList<>();
+        Iterator<Integer> iterator = al.iterator();
         System.out.println("abc".substring(0, 1));
+        map.computeIfAbsent(1, (v) -> 6);
+
+
     }
 }
