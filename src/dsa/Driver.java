@@ -8,4 +8,8 @@ public class Driver {
     public static void main(String[] args) {
         SubTest subTest = new SubTest();
     }
+
+    static void testModifier() {
+
+    }
 }
