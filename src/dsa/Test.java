@@ -19,6 +19,9 @@ public class Test {
         map.put(null, null);
         map.put(null, null);
         System.out.println(map);
+        for (Map.Entry<String, String> e : map.entrySet()) {
+            System.out.println("map -> " + e.getKey() + e.getValue());
+        }
 
         Set<String> set = new HashSet<>();
         set.add("1");
