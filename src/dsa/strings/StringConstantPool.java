@@ -8,6 +8,7 @@ public class StringConstantPool {
 
         String s3 = new String("vaibhav");
         System.out.println(s1 == s3);
+        System.out.println(s1 == s3.intern());
 
         String a = "geeks";
         String b = a;

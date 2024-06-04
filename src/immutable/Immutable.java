@@ -25,8 +25,7 @@ public final class Immutable {
     }
 
     public Temp getTemp() {
-        Temp temp = new Temp(10);
-        temp.setT(temp.getT());
+        Temp temp = new Temp(this.x);
         return temp;
     }
 }
