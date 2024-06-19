@@ -6,7 +6,7 @@ public final class Immutable {
 
     public Immutable(int x, Temp temp) {
         this.x = x;
-        this.temp = temp;
+        this.temp = new Temp(temp);
     }
 
     public static void main(String[] args) {
@@ -25,8 +25,7 @@ public final class Immutable {
     }
 
     public Temp getTemp() {
-        Temp temp = new Temp(this.x);
-        return temp;
+        return new Temp(this.temp);
     }
 }
 
@@ -36,6 +35,10 @@ class Temp {
 
     public Temp(int t) {
         this.t = t;
+    }
+
+    public Temp(Temp other) {
+        this.t = other.t;
     }
 
     public int getT() {
